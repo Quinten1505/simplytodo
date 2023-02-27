@@ -5,16 +5,16 @@
 }
 :root {
   --section-spacing: 3.5rem;
-  --clr-primary-100: #fcf8f8;
-  --clr-primary-200: #f4e7e7;
-  --clr-primary-300: #eed8d8;
-  --clr-primary-400: #bca9a9;
-  --clr-primary-500: #8d8181;
-  --clr-accent-100: #b0dde8;
-  --clr-accent-200: #89cddc;
-  --clr-accent-300: #62bcd0;
-  --clr-accent-400: #3293a9;
-  --clr-accent-500: #17444f;
+  --clr-primary-100: #b0e8bb;
+  --clr-primary-200: #89dc98;
+  --clr-primary-300: #62d076;
+  --clr-primary-400: #32a948;
+  --clr-primary-500: #174f22;
+  --clr-accent-100: #fcf8f8;
+  --clr-accent-200: #f4e7e7;
+  --clr-accent-300: #eed8d8;
+  --clr-accent-400: #bca9a9;
+  --clr-accent-500: #8d8181;
   --clr-contemp-100: #e8b0c2;
   --clr-contemp-200: #dc89a3;
   --clr-contemp-300: #d06285;
@@ -216,6 +216,16 @@ p:not([class]),
 ul:not([class]),
 li:not([class]) {
   max-width: 60ch;
+}
+
+.container {
+  padding: 0 1.5rem;
+  max-width: 62.5rem;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--clr-accent-200);
 }
 
 /*# sourceMappingURL=main.css.map */
