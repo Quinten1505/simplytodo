@@ -12,7 +12,9 @@
 
     @include element(icon) {
         position: relative;
+        margin: 0;
         right: 1em;
+        top: 50%;
         height: 1em;
         width: 1em;
         border: 2px solid var(--clr-neutral-300);
@@ -38,4 +40,38 @@
             border-bottom: 2px solid var(--clr-neutral-500);
         }
     }
+}
+
+.todo-item {
+    position: relative;
+    max-width: 60ch;
+    display: flex;
+
+    @include element(icon-container) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3em;
+        margin: auto;
+        // background-color: grey;
+
+        @include element(icon) {
+            margin: auto;
+            right: 1em;
+            top: 50%;
+            height: 1em;
+            width: 1em;
+            border: 2px solid var(--clr-neutral-300);
+            border-radius: 15%;
+        }
+    }
+
+    @include element(text) {
+        flex-grow: 1;
+        border: none;
+        outline: none;
+        width: 100%;
+        background: red;
+    }
+
 }
