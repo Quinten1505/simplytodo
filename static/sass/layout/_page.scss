@@ -2,4 +2,16 @@
 
 body {
     background-color: var(--clr-accent-200);
+    padding: 2rem
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.side-pane {
+    flex: 20%;
 }

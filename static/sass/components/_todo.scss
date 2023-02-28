@@ -1,11 +1,41 @@
+@use '../abstracts' as *;
+
 .add-item{
     position: relative;
     max-width: 60ch;
+    display: flex;
 
     &,
     &__input {
         font-family: sans-serif;
     }
 
-    
+    @include element(icon) {
+        position: relative;
+        right: 1em;
+        height: 1em;
+        width: 1em;
+        border: 2px solid var(--clr-neutral-300);
+        border-radius: 15%;
+    }
+
+    @include element(input) {
+        flex-grow: 1;
+        border: none;
+        border-bottom: 2px solid var(--clr-neutral-300);
+        outline: none;
+        width: 100%;
+        padding: 0 6px;
+        background: transparent;
+    }
+
+    &:focus-within {
+        & > .add-item__icon {
+            border-color: var(--clr-neutral-500);
+        }
+
+        & > .add-item__input {
+            border-bottom: 2px solid var(--clr-neutral-500);
+        }
+    }
 }
