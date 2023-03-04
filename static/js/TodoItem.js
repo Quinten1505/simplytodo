@@ -27,7 +27,7 @@ class TodoItem {
 
     createItem() {
         const todoList = document.querySelector(".todo-list")
-        todoList.appendChild(this.elements.main)
+        todoList.insertBefore(this.elements.main, todoList.childNodes[0])
     }
 }
 

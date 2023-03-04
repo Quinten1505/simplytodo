@@ -264,13 +264,14 @@ body {
   margin: auto;
 }
 .add-item__icon-container__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  right: 1em;
-  top: 50%;
   height: 1em;
   width: 1em;
-  border: 2px solid var(--clr-neutral-300);
-  border-radius: 15%;
+  color: var(--clr-neutral-300);
+  font-size: var(--fs-500);
 }
 
 .add-item__input {
@@ -284,7 +285,7 @@ body {
 }
 
 .add-item:focus-within > .add-item__icon-container > .add-item__icon-container__icon {
-  border-color: var(--clr-neutral-500);
+  color: var(--clr-neutral-500);
 }
 .add-item:focus-within > .add-item__input {
   border-bottom: 2px solid var(--clr-neutral-500);
