@@ -15,3 +15,10 @@ body {
 .side-pane {
     flex: 20%;
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: left;
+}
